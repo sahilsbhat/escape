@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('4094501.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px); /* Add blur effect */
+}
+
+#game-canvas {
+    border: 2px solid #000;
+    background: url('4094501.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#bird {
+    width: 40px;
+    height: 40px;
+    background-color: #FFD700; /* Gold */
+    position: absolute;
+}
+
+.pipe {
+    width: 50px;
+    position: absolute;
+    background-color: #008000; /* Green */
+}
+
+#score {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #FFD700; /* Yellow */
+    font-size: 20px;
+}
+
+/* Additional styling for Game Over message */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #000;
+}
+
+.try-again {
+    font-size: 20px;
+    margin-top: 20px;
+}

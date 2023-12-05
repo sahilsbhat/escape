@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Free Online Games</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- <a href="#" class="logo"> Logo</a>-->
+            <pre> <img   class="logo"  src="mainlogo.png" alt=""><span class="done">Escape Room Games </span> </pre>   
+                                    
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+             <!-- <h2 class="club">Escape Room Game</h2>   -->
+            <!-- <a   class="club" href="#">Escape Room Game</a>  -->
+            <!-- <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a> -->
+            <a href="login.html"><img  
+                class="loginimg"
+                src="loginimg.png" alt=""></a>
+        </nav>
+    </header>
+    <div class="nav-bg"></div>
+    
+
+    <section id="game-list">
+        <!-- Game cards will be dynamically added here using JavaScript -->
+    </section>
+
+    <footer>
+        <!-- <div class="subscribe-container">
+            <button id="subscribeBtn">Subscribe Now</button>
+            <p><b>Subscribe for new arriving games<b></p>
+        </div>-->
+
+        <div class="container">
+           <p>To get the latest updates straight to your inbox <a class="sub" href="sub.html">SUBSCRIBE</a>  </p>
+            
+          <a href="terms.html">Terms of use   </a>
+             <a href="privacy.html">   privacy policy</a>
+            <br>
+            <a href="about.html">About</a> <br>
+            <a href="#">HOME</a>
+            <h4> © All rights reserved</h4>
+
+        </div>
+
+
+    </footer> 
+    <!-- <div class="wrapper">
+        <div class="icon"><i class="far fa-envelope"></i></div>
+        <div class="content">
+          <header>Become a Subscriber</header>
+          <p>Subscribe to our blog and get the latest updates straight to your inbox.</p>
+        </div>
+        <form name="submit-to-google-sheet">
+        
+          <div class="field">
+            <input type="email"  name="Email" placeholder="Email Address" required>
+          </div>
+          <div class="field btn">
+            <div class="layer"></div>
+            <button type="submit" name="subscribe">Subscribe</button>
+          </div>
+        </form>
+        <span id="msg"> </span>
+      </div>
+       -->
+      <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhuLfY5BnkxVAQzg1YEdDUhZR8QM6tngplAEcS8Lh2jTSCVvFr24BriSk6QPWMOGSz/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML ="Thank  you for subscribing "
+              setTimeout(function(){
+                msg.innerHTML =""
+              },5000)
+              form.reset()
+    
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>  -->
+
+
+    <script src="index.js"></script>
+</body>
+</html>

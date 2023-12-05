@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Maze Game</title>
+    <link rel="stylesheet" type="text/css" href="maze.css">
+</head>
+<body>
+    <section>
+        <div id="wrapper">
+           <center>
+            <h1 id="heading">Lost Path</h1>
+            <div id="maze">
+                <p>Find the way out of Maze in 30 seconds!</p>
+                <div id="c"></div>
+                <canvas id="canvas" width="523" height="523"></canvas>
+                <div id="timerel"></div>
+            </div>
+           <center>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 class="gamehead"></h2>
+                    </div>
+                    <div class="modal-footer">
+                        <h2 id="demo" onmouseover="" style="cursor:pointer;">Play Again?</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="maze.js"></script>
+    </section>
+</body>
+</html>
